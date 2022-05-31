@@ -1,0 +1,157 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Khái niệm về quá trình quá độ điện từ</title>
+  <metadata>
+  <md:content-id>m29838</md:content-id><md:title>Khái niệm về quá trình quá độ điện từ</md:title>
+  <md:abstract>Các khái niệm về quá trình quá độ điện từ</md:abstract>
+  <md:uuid>43f2bc2c-30d7-4e31-b148-b0340f5b8d34</md:uuid>
+</metadata>
+
+<content>
+    <para id="id5835245">Nội dung </para>
+    <section id="id-0760220012341">
+      <title>KHÁI NIỆM CHUNG</title>
+      <para id="id5835260">Chế độ của hệ thống điện thay đổi đột ngột sẽ làm phát sinh quá trình quá độ điện từ, trong đó quá trình phát sinh do ngắn mạch là nguy hiểm nhất. Để tính chọn các thiết bị điện và bảo vệ rơle cần phải xét đến quá trình quá độ khi:</para>
+      <para id="id5835274">- ngắn mạch.</para>
+      <para id="id5835279">- ngắn mạch kèm theo đứt dây.</para>
+      <para id="id5835285">- cắt ngắn mạch bằng máy cắt điện.</para>
+      <para id="id5835291">Khi xảy ra ngắn mạch, tổng trở của hệ thống điện giảm, làm dòng điện tăng lên, điện áp giảm xuống. Nếu không nhanh chóng cô lập điểm ngắn mạch thì hệ thống sẽ chuyển sang chế độ ngắn mạch duy trì (xác lập).</para>
+      <para id="id5835305">Từ lúc xảy ra ngắn mạch cho đến khi cắt nó ra, trong hệ thống điện xảy ra quá trình quá độ làm thay đổi dòng và áp. Dòng trong quá trình quá độ thường gồm 2 thành phần: chu kỳ và không chu kỳ. Trường hợp hệ thống có đường dây truyền tải điện áp từ 330 KV trở lên thì trong dòng ngắn mạch ngoài thành phần tần số cơ bản còn các thành phần sóng hài bậc cao. Nếu đường dây có tụ bù dọc sẽ có thêm thành phần sóng hài bậc thấp.</para>
+      <para id="id5835309">Nhiệm vụ của môn học ngắn mạch là nghiên cứu diễn tiến của quá trình ngắn mạch trong hệ thống điện, đồng thời xét đến các phương pháp thực dụng tính toán ngắn mạch.</para>
+    </section>
+    <section id="id-725360376733">
+      <title>CÁC ĐỊNH NGHĨA CƠ BẢN </title>
+      <list id="id5154203" list-type="bulleted">
+        <item>Ngắn mạch: là một loại sự cố xảy ra trong hệ thống điện do hiện tượng chạm chập giữa các pha không thuộc chế độ làm việc bình thường.</item>
+      </list>
+      <para id="id5154227">- Trong hệ thống có trung tính nối đất (hay 4 dây) chạm chập một pha hay nhiều pha với đất (hay với dây trung tính) cũng được gọi là ngắn mạch.</para>
+      <para id="id5154250">- Trong hệ thống có trung tính cách điện hay nối đất qua thiết bị bù, hiện tượng chạm chập một pha với đất được gọi là chạm đất. Dòng chạm đất chủ yếu là do điện dung các pha với đất.</para>
+      <list id="id5154275" list-type="bulleted">
+        <item>Ngắn mạch gián tiếp: là ngắn mạch qua một điện trở trung gian, gồm điện trở do hồ quang điện và điện trở của các phần tử khác trên đường đi của dòng điện từ pha này đến pha khác hoặc từ pha đến đất.</item>
+      </list>
+      <para id="id5154301">Điện trở hồ quang điện thay đổi theo thời gian, thường rất phức tạp và khó xác định chính xác. Theo thực nghiệm:</para>
+      <para id="id5154308">
+        <m:math>
+          <m:semantics>
+            <m:mrow>
+              <m:mstyle fontsize="12pt">
+                <m:mrow>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mi>R</m:mi>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mrow>
+                          <m:mtext>1000</m:mtext>
+                          <m:mtext>.</m:mtext>
+                          <m:mi>l</m:mi>
+                        </m:mrow>
+                        <m:mi>I</m:mi>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mtext/>
+                    <m:mo stretchy="false">[</m:mo>
+                    <m:mo stretchy="false">Ω</m:mo>
+                    <m:mo stretchy="false">]</m:mo>
+                  </m:mrow>
+                </m:mrow>
+              </m:mstyle>
+              <m:mrow/>
+            </m:mrow>
+            <m:annotation encoding="StarMath 5.0"> size 12{R= {  {"1000" "." l}  over  {I} } "     " \[  %OMEGA  \] } {}</m:annotation>
+          </m:semantics>
+        </m:math>
+      </para>
+      <para id="id5573861">trong đó: I - dòng ngắn mạch [A]</para>
+      <para id="id5573867">l - chiều dài hồ quang điện [m] </para>
+      <list id="id5573873" list-type="bulleted">
+        <item>Ngắn mạch trực tiếp: là ngắn mạch qua một điện trở trung gian rất bé, có thể bỏ qua (còn được gọi là ngắn mạch kim loại).</item>
+        <item>Ngắn mạch đối xứng: là dạng ngắn mạch vẫn duy trì được hệ thống dòng, áp 3 pha ở tình trạng đối xứng.</item>
+        <item>Ngắn mạch không đối xứng: là dạng ngắn mạch làm cho hệ thống dòng, áp 3 pha mất đối xứng.</item>
+      </list>
+      <para id="id5573930">- Không đối xứng ngang: khi sự cố xảy ra tại một điểm, mà tổng trở các pha tại điểm đó như nhau. </para>
+      <para id="id5573940">- Không đối xứng dọc: khi sự cố xảy ra mà tổng trở các pha tại một điểm không như nhau.</para>
+      <list id="id5573948" list-type="bulleted">
+        <item>Sự cố phức tạp: là hiện tượng xuất hiện nhiều dạng ngắn mạch không đối xứng ngang, dọc trong hệ thống điện.</item>
+      </list>
+      <para id="id5573970">Ví dụ: đứt dây kèm theo chạm đất, chạm đất hai pha tại hai điểm khác nhau trong hệ thống có trung tính cách đất.</para>
+      <para id="id5573979">Bảng 1.1: Ký hiệu và xác xuất xảy ra các dạng ngắn mạch</para>
+      <table id="id5573986" summary="">
+        <tgroup cols="4">
+          <colspec colnum="1" colname="c1"/>
+          <colspec colnum="2" colname="c2"/>
+          <colspec colnum="3" colname="c3"/>
+          <colspec colnum="4" colname="c4"/>
+          <tbody>
+            <row>
+              <entry>dạngngắn mạch</entry>
+              <entry>hình vẽquy ước</entry>
+              <entry>kí hiệu</entry>
+              <entry>xác suấtxảy ra %</entry>
+            </row>
+            <row>
+              <entry>3 pha</entry>
+              <entry>
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      </entry>
+              <entry>N(3)</entry>
+              <entry>5</entry>
+            </row>
+            <row>
+              <entry>2 pha</entry>
+              <entry>
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      </entry>
+              <entry>N(2)</entry>
+              <entry>10</entry>
+            </row>
+            <row>
+              <entry>2 pha-đất</entry>
+              <entry>
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      </entry>
+              <entry>N(1,1)</entry>
+              <entry>20</entry>
+            </row>
+            <row>
+              <entry>1 pha</entry>
+              <entry>
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      </entry>
+              <entry>N(1)</entry>
+              <entry>65</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </section>
+    <section id="id-671361721692">
+      <title>NGUYÊN NHÂN VÀ HẬU QUẢ CỦA NGẮN MẠCH</title>
+      <section id="id-840274831846">
+        <title>Nguyên nhân:</title>
+        <para id="id5742423">- Cách điện của các thiết bị già cỗi, hư hỏng.</para>
+        <para id="id5742430">- Quá điện áp.</para>
+        <para id="id5742435">- Các ngẫu nhiên khác, thao tác nhầm hoặc do được dự tính trước...</para>
+      </section>
+      <section id="id-510504504835">
+        <title>Hậu quả:</title>
+        <para id="id5742450">- Phát nóng: dòng ngắn mạch rất lớn so với dòng định mức làm cho các phần tử có dòng ngắn mạch đi qua nóng quá mức cho phép dù với một thời gian rất ngắn.</para>
+        <para id="id5742462">- Tăng lực điện động: ứng lực điện từ giữa các dây dẫn có giá trị lớn ở thời gian đầu của ngắn mạch có thể phá hỏng thiết bị.</para>
+        <para id="id5742473">- Điện áp giảm và mất đối xứng: làm ảnh hưởng đến phụ tải, điện áp giảm 30 đến 40% trong vòng một giây làm động cơ điện có thể ngừng quay, sản xuất đình trệ, có thể làm hỏng sản phẩm. </para>
+        <para id="id5742487">- Gây nhiễu đối với đường dây thông tin ở gần do dòng thứ tự không sinh ra khi ngắn mạch chạm đất.</para>
+        <para id="id5742496">- Gây mất ổn định: khi không cách ly kịp thời phần tử bị ngắn mạch, hệ thống có thể mất ổn định và tan rã, đây là hậu quả trầm trọng nhất. </para>
+      </section>
+    </section>
+    <section id="id-220294269891">
+      <title>MỤC ĐÍCH TÍNH TOÁN NGẮN MẠCH VÀ YÊU CẦU ĐỐI VỚI CHÚNG:</title>
+      <para id="id5742518">Khi thiết kế và vận hành các hệ thống điện, nhằm giải quyết nhiều vấn đề kỹ thuật yêu cầu tiến hành hàng loạt các tính toán sơ bộ, trong đó có tính toán ngắn mạch.</para>
+      <para id="id5742531">Tính toán ngắn mạch thường là những tính toán dòng, áp lúc xảy ra ngắn mạch tại một số điểm hay một số nhánh của sơ đồ đang xét. Tùy thuộc mục đích tính toán mà các đại lượng trên có thể được tính ở một thời điểm nào đó hay diễn biến của chúng trong suốt cả quá trình quá độ. Những tính toán như vậy cần thiết để giải quyết các vấn đề sau:</para>
+      <para id="id4806129">- So sánh, đánh giá, chọn lựa sơ đồ nối điện.</para>
+      <para id="id4806136">- Chọn các khí cụ, dây dẫn, thiết bị điện.</para>
+      <para id="id4806142">- Thiết kế và chỉnh định các loại bảo vệ.</para>
+      <para id="id4806149">- Nghiên cứu phụ tải, phân tích sự cố, xác định phân bố dòng...</para>
+      <para id="id4806156">Trong hệ thống điện phức tạp, việc tính toán ngắn mạch một cách chính xác rất khó khăn. Do vậy tùy thuộc yêu cầu tính toán mà trong thực tế thường dùng các phương pháp thực nghiệm, gần đúng với các điều kiện đầu khác nhau để tính toán ngắn mạch.</para>
+      <para id="id4806170">Chẳng hạn để tính chọn máy cắt điện, theo điều kiện làm việc của nó khi ngắn mạch cần phải xác định dòng ngắn mạch lớn nhất có thể có. Muốn vậy, người ta giả thiết rằng ngắn mạch xảy ra lúc hệ thống điện có số lượng máy phát làm việc nhiều nhất, dạng ngắn mạch gây nên dòng lớn nhất, ngắn mạch là trực tiếp, ngắn mạch xảy ra ngay tại đầu cực máy cắt ...</para>
+      <para id="id4806185">Để giải quyết các vấn đề liên quan đến việc chọn lựa và chỉnh định thiết bị bảo vệ rơle thường phải tìm dòng ngắn mạch nhỏ nhất. Lúc ấy tất nhiên cần phải sử dụng những điều kiện tính toán hoàn toàn khác với những điều kiện nêu trên. </para>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,1861 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:md="http://cnx.rice.edu/mdml">
+  <title>Các phương pháp tính toán ngắn mạch</title>
+  <metadata>
+  <md:content-id>m30337</md:content-id><md:title>Các phương pháp tính toán ngắn mạch</md:title>
+  <md:abstract>Các phương pháp tính toán ngắn mạch</md:abstract>
+  <md:uuid>31c5ad9e-6a60-4050-974b-f4e18ddde2a6</md:uuid>
+</metadata>
+
+<content>
+    
+    <section id="id-201675923981">
+      <title>Khái niệm chung:</title>
+      <para id="id6887562">Phương pháp tính dòng ngắn mạch bằng cách giải hệ phương trình vi phân đòi hỏi nhiều công sức, mặc dù chính xác nhưng ngay cả để tính một sơ đồ đơn giản khối lượng tính toán cũng khá cồng kềnh, bậc phương trình tăng nhanh theo số máy điện có trong sơ đồ. Ngoài ra còn có những vấn đề làm phức tạp thêm quá trình tính toán như: dao động công suất, dòng tự do trong các máy điện ảnh hưởng nhau, tác dụng của thiết bị tự động điều chỉnh kích từ (TĐK), tham số dọ trục và ngang trục khác nhau.... Do đó, trong thực tế thường dùng các phương pháp thực dụng cho phép tính toán đơn giản hơn.</para>
+      <para id="id6586348">Ngoài các giả thiết cơ bản đã nêu trước đây, còn có thêm những giả thiết sau:</para>
+      <list id="id6586356" list-type="bulleted">
+        <item>Qui luật biến thiên thành phần chu kỳ của dòng ngắn mạch trong sơ đồ có một máy phát tương tự như trong sơ đồ có nhiều máy phát.</item>
+        <item>Việc xét đến thành phần không chu kỳ của dòng ngắn mạch trong tất cả các trường hợp có thể tiến hành một cách gần đúng.</item>
+        <item>Rôto của các máy điện đồng bộ là đối xứng do đó không cần phân biệt sức điện động, điện áp, dòng điện theo các trục và có thể bỏ qua thành phần chu kỳ 2.</item>
+      </list>
+      <para id="id6766373">Tùy mục đích tính toán có thể sử dụng các phương pháp khác nhau với sai số không được vượt quá phạm vi cho phép 5% đối với trị số ban đầu và 1015% ở các thời điểm khác.</para>
+    </section>
+    <section id="id-284702749926">
+      <title>Phương pháp giảI tích:</title>
+      <section id="id-642119478939">
+        <title>Tính dòng siêu quá độ ban đầu:</title>
+        <para id="id6259402">Trình tự tính toán như sau:</para>
+        <para id="id6259407">a) Lập sơ đồ thay thế, tính toán qui đổi tham số của các phần tử trong hệ đơn vị có tên hay đơn vị tương đối:</para>
+        <para id="id6259417">- Máy phát: thay thế bằng E”o và X’’ = x”d = x”q, đối với máy phát không có cuộn cản xem rôto như cuộn cản tự nhiên, tức là cũng dùng các thông số siêu qúa độ để tính toán với x”d = (0,750,9) x’d.</para>
+        <para id="id6257163">Sức điện động E”o được tính theo công thức gần đúng với giả thiết máy phát làm việc ở chế độ định mức trước khi ngắn mạch:</para>
+        <para id="id6721260">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msubsup>
+                        <m:mi>E</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>o</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mtext>} } = sqrt { \( U rSub { size 8{F} } </m:mtext>
+                              <m:mi>sin</m:mi>
+                              <m:mtext>j+I rSub { size 8{F} } x rSub { size 8{d} }  rSup { size 8{</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msubsup>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mo stretchy="false">)</m:mo>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mn>2</m:mn>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">+</m:mo>
+                        <m:mo stretchy="false">(</m:mo>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi>U</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>F</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mtext>cos</m:mtext>
+                      <m:mi>j</m:mi>
+                      <m:msup>
+                        <m:mo stretchy="false">)</m:mo>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mn>2</m:mn>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow>
+                  <m:mrow/>
+                  <m:mrow/>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{E rSub { size 8{o} }  rSup { size 8{"} } = sqrt { \( U rSub { size 8{F} } "sin"j+I rSub { size 8{F} } x rSub { size 8{d} }  rSup { size 8{"} }  \)  rSup { size 8{2} } + \( U rSub { size 8{F} } "cos"j \)  rSup { size 8{2} } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6298372">Nếu máy phát làm việc ở chế độ không tải trước khi ngắn mạch thì E”o = UF.</para>
+        <para id="id6587221">- Động cơ và máy bù đồng bộ được tính như máy phát.</para>
+        <para id="id6587228">- Động cơ không đồng bộ và phụ tải tổng hợp thay thế bằng:</para>
+        <para id="id6888779">
+          <m:math>
+            <m:semantics>
+              <m:mtable>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mtext>} } =X rSub { size 8{*N} } = {  {1}  over  {I rSub { size 8{* ital </m:mtext>
+                    <m:mi fontstyle="italic">mm</m:mi>
+                    <m:mtext>} } } } } {}</m:mtext>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="8pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+                <m:mtr>
+                  <m:msubsup>
+                    <m:mi>X</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mrow/>
+                  </m:msubsup>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+              </m:mtable>
+              <m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{*} }  rSup { size 8{"} } =X rSub { size 8{*N} } = {  {1}  over  {I rSub { size 8{* ital "mm"} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6764631">và: E”o  Uo - IoX”sino</para>
+        <para id="id5690038">trong đó: X*N - điện kháng ngắn mạch (lúc động cơ bị hãm).</para>
+        <para id="id6767440">I*mm - dòng mở máy của động cơ.</para>
+        <para id="id6656496">Uo, Io, sino - được lấy ở tình trạng trước ngắn mạch.</para>
+        <para id="id6786423">Khi không có đủ số liệu cần thiết có thể tra bảng sau:</para>
+        <table id="id6786430" summary="">
+          <tgroup cols="3">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <colspec colnum="3" colname="c3"/>
+            <tbody>
+              <row>
+                <entry>THIẾT BỊ</entry>
+                <entry>X”</entry>
+                <entry>E”o</entry>
+              </row>
+              <row>
+                <entry>Máy phát turbine hơi</entry>
+                <entry>0,125</entry>
+                <entry>1,08</entry>
+              </row>
+              <row>
+                <entry>Máy phát turbine nước có cuộn cản</entry>
+                <entry>0,2</entry>
+                <entry>1,13</entry>
+              </row>
+              <row>
+                <entry>Máy phát turbine nước không cuộn cản</entry>
+                <entry>0,27</entry>
+                <entry>1,18</entry>
+              </row>
+              <row>
+                <entry>Động cơ đồng bộ</entry>
+                <entry>0,2</entry>
+                <entry>1,1</entry>
+              </row>
+              <row>
+                <entry>Máy bù đồng bộ</entry>
+                <entry>0,2</entry>
+                <entry>1,2</entry>
+              </row>
+              <row>
+                <entry>Động cơ không đồng bộ</entry>
+                <entry>0,2</entry>
+                <entry>0,9</entry>
+              </row>
+              <row>
+                <entry>Phụ tải tổng hợp</entry>
+                <entry>0,35</entry>
+                <entry>0,8</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <para id="id6535853">b) Tính toán: Biến đổi sơ đồ thành dạng đơn giản gồm một hay nhiều nhánh nối trực tiếp từ nguồn đến điểm ngắn mạch (hình 6.1), từ đó tính được dòng siêu quá độ ban đầu theo biểu thức sau:</para>
+        <table id="id6535858" summary="">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <tbody>
+              <row>
+                <entry><m:math><m:semantics><m:mtable><m:mtr><m:mtext>} } } } } } {}</m:mtext></m:mtr><m:mtr><m:mstyle fontsize="8pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:mtr><m:mtr><m:msubsup><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>i</m:mi></m:mrow></m:mstyle><m:mrow/></m:msubsup></m:mtr><m:mtr><m:mfrac><m:mstyle fontsize="12pt"><m:mrow><m:msubsup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mtext>} } = Sum cSub { size 8{i=1} }  cSup { size 8{n} }  { {  {E rSub { size 8{i} }  rSup { size 8{</m:mtext></m:mrow></m:mstyle></m:msubsup></m:mrow></m:mstyle><m:mrow/></m:mfrac></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{o} }  rSup { size 8{"} } = Sum cSub { size 8{i=1} }  cSup { size 8{n} }  { {  {E rSub { size 8{i} }  rSup { size 8{"} } }  over  {X rSub { size 8{i} }  rSup { size 8{"} } } } } } {}</m:annotation></m:semantics></m:math>c) Chú ý: Trong thực tế, việc tính toán dòng siêu quá độ ban đầu thường chỉ xét đến những phụ tải nối trực tiếp vào điểm ngắn mạch.</entry>
+                <entry>
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      Hình 6.1</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </section>
+      <section id="id-822827819765">
+        <title>Tính dòng ngắn mạch đối với nguồn công suất vô cùng lớn:</title>
+        <para id="id6734923">Trong tính toán đơn giản sơ bộ hay trong mạng có nguồn công suất vô cùng lớn thì thành phần chu kỳ của dòng ngắn mạch là không đổi và được tính như sau:</para>
+        <para id="id6734934">
+          <m:math>
+            <m:semantics>
+              <m:mtable>
+                <m:mtr>
+                  <m:mtext>} } =I rSub { size 8{¥} } } {}</m:mtext>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="8pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>I</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>ck</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>U</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>tb</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mrow>
+                          <m:msqrt>
+                            <m:mn>3</m:mn>
+                          </m:msqrt>
+                          <m:msub>
+                            <m:mi>X</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>S</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:msubsup>
+                      <m:mi>I</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>o</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:msubsup>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+              </m:mtable>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "ck"} } = {  {U rSub { size 8{ ital "tb"} } }  over  { sqrt {3} X rSub { size 8{S} } } } =I rSub { size 8{o} }  rSup { size 8{"} } =I rSub { size 8{¥} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6256478">trong đó: Utb - điện áp trung bình của đoạn có điểm ngắn mạch.</para>
+        <para id="id6875677">X - điện kháng giữa nguồn và điểm ngắn mạch qui về đoạn có điểm ngắn mạch.</para>
+        <para id="id6735553">Trong hệ đơn vị tương đối với lượng cơ bản là Scb và Ucb = Utb thì:</para>
+        <para id="id6259345">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>S</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow/>
+                                <m:mi>N</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow/>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>ck</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:mn>1</m:mn>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mrow/>
+                                <m:mi>S</m:mi>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{*N} } =I rSub { size 8{* ital "ck"} } = {  {1}  over  {X rSub { size 8{*S} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6538840">với: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>S</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>N</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msqrt><m:mn>3</m:mn></m:msqrt></m:mrow><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tb</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ck</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{S rSub { size 8{N} } = sqrt {3} U rSub { size 8{ ital "tb"} } I rSub { size 8{ ital "ck"} } } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id6538971">Trong tính toán thực dụng, việc xét đến các hệ thống thường là gần đúng.</para>
+        <list id="id5905901" list-type="bulleted">
+          <item>Nếu đã biết trị số dòng siêu qúa độ ban đầu I”o hoặc công suất S”N khi ngắn mạch 3 pha tại một nút bất kỳ trong hệ thống (hình 6.2), thì có thể xác định điện kháng XH của hệ thống đối với điểm nút này:</item>
+        </list>
+        <para id="id6767919"><m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>H</m:mi></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tb</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mrow><m:msqrt><m:mn>3</m:mn></m:msqrt><m:mtext>.</m:mtext><m:msubsup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mtext>} } } } = {  {U rSub { size 8{ ital </m:mtext><m:mi fontstyle="italic">tb</m:mi><m:mtext>} }  rSup { size 8{2} } }  over  {S rSub { size 8{N} }  rSup { size 8{</m:mtext></m:mrow></m:mrow></m:mstyle></m:msubsup></m:mrow></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{H} } = {  {U rSub { size 8{ ital "tb"} } }  over  { sqrt {3}  "." I rSub { size 8{o} }  rSup { size 8{"} } } } = {  {U rSub { size 8{ ital "tb"} }  rSup { size 8{2} } }  over  {S rSub { size 8{N} }  rSup { size 8{"} } } } } {}</m:annotation></m:semantics></m:math> hay 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>X</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mrow/><m:mi>H</m:mi></m:mrow></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:mfrac><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>cb</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msubsup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>o</m:mi></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mtext>} } } } = {  {S rSub { size 8{ ital </m:mtext><m:mi fontstyle="italic">cb</m:mi><m:mtext>} } }  over  {S rSub { size 8{N} }  rSup { size 8{</m:mtext></m:mrow></m:mrow></m:mstyle></m:msubsup></m:mfrac></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{*H} } = {  {I rSub { size 8{ ital "cb"} } }  over  {I rSub { size 8{o} }  rSup { size 8{"} } } } = {  {S rSub { size 8{ ital "cb"} } }  over  {S rSub { size 8{N} }  rSup { size 8{"} } } } } {}</m:annotation></m:semantics></m:math> (6.1)</para>
+        <list id="id6970547" list-type="bulleted">
+          <item>Nếu không biết dòng hay công suất ngắn mạch, có thể xác định điện kháng XH gần đúng từ công suất cắt định mức của máy cắt dùng để cắt công suất ngắn mạch đó (hình 6.3), tức là trong các biểu thức (6.1) ở trên dùng ICđm và SCđm thay cho I”o và S”N.</item>
+        </list>
+        <table id="id6773258" summary="">
+          <tgroup cols="2">
+            <colspec colnum="1" colname="c1"/>
+            <colspec colnum="2" colname="c2"/>
+            <tbody>
+              <row>
+                <entry>
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      Hình 6.2</entry>
+                <entry>
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      Hình 6.3</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+        <list id="id6720823" list-type="bulleted">
+          <item>Nếu tại nút đang xét còn có nhà máy điện địa phương (hình 6.3) thì phải giảm bớt lượng I”F, S”F do nhà máy điện này cung cấp, tức là trong các biểu thức (6.1) ở trên dùng (ICđm- I”F) và (SCđm- S”F) thay cho I”o và S”N.</item>
+          <item>Trường hợp có một số hệ thống liên lạc với nhau qua một số điểm nút, nếu đã biết dòng hay công suất ngắn mạch ở mỗi điểm nút, cũng có thể xác định được điện kháng XH của hệ thống. Ví dụ, trên hình 6.4 ta có:</item>
+        </list>
+        <para id="id6141850">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>X</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi fontstyle="italic">MS</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>U</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>tb</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mrow>
+                          <m:msqrt>
+                            <m:mn>3</m:mn>
+                          </m:msqrt>
+                          <m:mtext>.</m:mtext>
+                          <m:msubsup>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi>M</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mtext>} } } } </m:mtext>
+                                  <m:mi fontstyle="italic">va</m:mi>
+                                  <m:mi></m:mi>
+                                  <m:mtext>X rSub { size 8{NS} } = {  {U rSub { size 8{ ital </m:mtext>
+                                  <m:mi fontstyle="italic">tb</m:mi>
+                                  <m:mtext>} } }  over  { sqrt {3}  </m:mtext>
+                                  <m:mi>.</m:mi>
+                                  <m:mtext> I rSub { size 8{N} }  rSup { size 8{</m:mtext>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msubsup>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{MS} } = {  {U rSub { size 8{ ital "tb"} } }  over  { sqrt {3}  "." I rSub { size 8{M} }  rSup { size 8{"} } } } "            va           "X rSub { size 8{NS} } = {  {U rSub { size 8{ ital "tb"} } }  over  { sqrt {3}  "." I rSub { size 8{N} }  rSup { size 8{"} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6298334">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mrow>
+                  <m:mtable>
+                    <m:mtr>
+                      <m:mrow>
+                        <m:mstyle fontsize="12pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:msub>
+                                <m:mi>X</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi fontstyle="italic">MS</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:mo stretchy="false">=</m:mo>
+                              <m:mfrac>
+                                <m:mrow>
+                                  <m:msub>
+                                    <m:mi>X</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mi fontstyle="italic">H1</m:mi>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                  <m:mo stretchy="false">(</m:mo>
+                                  <m:mrow>
+                                    <m:msub>
+                                      <m:mi>X</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mi fontstyle="italic">H2</m:mi>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:mo stretchy="false">+</m:mo>
+                                    <m:msub>
+                                      <m:mi>X</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mstyle fontstyle="italic">
+                                            <m:mrow>
+                                              <m:mtext>MN</m:mtext>
+                                            </m:mrow>
+                                          </m:mstyle>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">)</m:mo>
+                                </m:mrow>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:msub>
+                                      <m:mi>X</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mi fontstyle="italic">H1</m:mi>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:mo stretchy="false">+</m:mo>
+                                    <m:msub>
+                                      <m:mi>X</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mi fontstyle="italic">H2</m:mi>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">+</m:mo>
+                                  <m:msub>
+                                    <m:mi>X</m:mi>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mstyle fontstyle="italic">
+                                          <m:mrow>
+                                            <m:mtext>MN</m:mtext>
+                                          </m:mrow>
+                                        </m:mstyle>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msub>
+                                </m:mrow>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtr>
+                    <m:mtr>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>X</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mi fontstyle="italic">NS</m:mi>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mrow>
+                              <m:mo stretchy="false">(</m:mo>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>X</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mi fontstyle="italic">H1</m:mi>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mo stretchy="false">+</m:mo>
+                                <m:msub>
+                                  <m:mi>X</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>MN</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mo stretchy="false">)</m:mo>
+                              <m:msub>
+                                <m:mi>X</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi fontstyle="italic">H2</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>X</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mi fontstyle="italic">H1</m:mi>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mo stretchy="false">+</m:mo>
+                                <m:msub>
+                                  <m:mi>X</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mi fontstyle="italic">H2</m:mi>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mrow>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:msub>
+                                <m:mi>X</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>MN</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                            </m:mrow>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mrow/>
+                      </m:mrow>
+                    </m:mtr>
+                  </m:mtable>
+                  <m:mrow/>
+                </m:mrow>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{X rSub { size 8{MS} } = {  {X rSub { size 8{H1} }  \( X rSub { size 8{H2} } +X rSub { size 8{ ital "MN"} }  \) }  over  {X rSub { size 8{H1} } +X rSub { size 8{H2} } +X rSub { size 8{ ital "MN"} } } } }  {} # 
+X rSub { size 8{NS} } = {  { \( X rSub { size 8{H1} } +X rSub { size 8{ ital "MN"} }  \) X rSub { size 8{H2} } }  over  {X rSub { size 8{H1} } +X rSub { size 8{H2} } +X rSub { size 8{ ital "MN"} } } }  {} 
+} } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6765361">từ đó, khi đã biết I”M, I”N và XMN có thể tính được XH1 và XH2.</para>
+        <para id="id6259437">
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      </para>
+        <para id="id6970022">Hình 6.4</para>
+      </section>
+      <section id="id-561346182976">
+        <title>Tính dòng xung kích:</title>
+        <para id="id6970035">a) Đối với mạng có công suất vô cùng lớn:</para>
+        <para id="id6970041">I”o = Ick = I</para>
+        <para id="id5860855">lúc đó: 
+<m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ckm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ck</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ck</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:msqrt><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">+</m:mo><m:mn>2</m:mn></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:msqrt><m:mrow/></m:mrow></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{i rSub { size 8{ ital "xk"} } =k rSub { size 8{ ital "xk"} } I rSub { size 8{ ital "ckm"} } = sqrt {2} k rSub { size 8{ ital "xk"} } I rSub { size 8{ ital "ck"} } }  {} # 
+I rSub { size 8{ ital "xk"} } =I rSub { size 8{ ital "ck"} }  sqrt {1+2 \( k rSub { size 8{ ital "xk"} } -1 \)  rSup { size 8{2} } }  {} 
+} } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id6515958">a) Đối với mạng có công suất hữu hạn:</para>
+        <para id="id5747189">
+          <m:math>
+            <m:semantics>
+              <m:mtable>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mtable>
+                      <m:mtr>
+                        <m:mstyle fontsize="12pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow>
+                                <m:msub>
+                                  <m:mi>i</m:mi>
+                                  <m:mstyle fontsize="8pt">
+                                    <m:mrow>
+                                      <m:mstyle fontstyle="italic">
+                                        <m:mrow>
+                                          <m:mtext>xk</m:mtext>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                                <m:mo stretchy="false">=</m:mo>
+                                <m:msqrt>
+                                  <m:mn>2</m:mn>
+                                </m:msqrt>
+                              </m:mrow>
+                              <m:msub>
+                                <m:mi>k</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>xk</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msub>
+                              <m:msubsup>
+                                <m:mi>I</m:mi>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mi>o</m:mi>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mstyle fontsize="8pt">
+                                  <m:mrow>
+                                    <m:mrow>
+                                      <m:mtext>} } }  {} # 
+I rSub { size 8{ ital </m:mtext>
+                                      <m:mi fontstyle="italic">xk</m:mi>
+                                      <m:mtext>} } =I rSub { size 8{o} }  rSup { size 8{</m:mtext>
+                                    </m:mrow>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:msubsup>
+                              <m:msqrt>
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mn>1</m:mn>
+                                    <m:mo stretchy="false">+</m:mo>
+                                    <m:mn>2</m:mn>
+                                  </m:mrow>
+                                  <m:mo stretchy="false">(</m:mo>
+                                  <m:mrow>
+                                    <m:msub>
+                                      <m:mi>k</m:mi>
+                                      <m:mstyle fontsize="8pt">
+                                        <m:mrow>
+                                          <m:mstyle fontstyle="italic">
+                                            <m:mrow>
+                                              <m:mtext>xk</m:mtext>
+                                            </m:mrow>
+                                          </m:mstyle>
+                                        </m:mrow>
+                                      </m:mstyle>
+                                    </m:msub>
+                                    <m:mo stretchy="false">−</m:mo>
+                                    <m:mn>1</m:mn>
+                                  </m:mrow>
+                                  <m:msup>
+                                    <m:mo stretchy="false">)</m:mo>
+                                    <m:mstyle fontsize="8pt">
+                                      <m:mrow>
+                                        <m:mn>2</m:mn>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                  </m:msup>
+                                </m:mrow>
+                              </m:msqrt>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:mtr>
+                    </m:mtable>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mtr>
+              </m:mtable>
+              <m:annotation encoding="StarMath 5.0">alignl { stack {
+ size 12{i rSub { size 8{ ital "xk"} } = sqrt {2} k rSub { size 8{ ital "xk"} } I rSub { size 8{o} }  rSup { size 8{"} } }  {} # 
+I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1+2 \( k rSub { size 8{ ital "xk"} } -1 \)  rSup { size 8{2} } }  {} 
+} } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6273393">trong các biểu thức trên, kxk là hệ số xung kích, phụ thuộc vào hằng số thời gian Ta=L/r. Khi xét riêng ảnh hưởng của các động cơ và phụ tải tổng hợp thì:</para>
+        <para id="id6515722">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>i</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>xk</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msqrt>
+                          <m:mn>2</m:mn>
+                        </m:msqrt>
+                      </m:mrow>
+                      <m:msub>
+                        <m:mi>k</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>xk</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:msubsup>
+                        <m:mi>I</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>o</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mtext>} } + sqrt {2} k rSub { size 8{ ital </m:mtext>
+                              <m:mi fontstyle="italic">xkå</m:mi>
+                              <m:mtext>} } I rSub { size 8{å} }  rSup { size 8{</m:mtext>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msubsup>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{i rSub { size 8{ ital "xk"} } = sqrt {2} k rSub { size 8{ ital "xk"} } I rSub { size 8{o} }  rSup { size 8{"} } + sqrt {2} k rSub { size 8{ ital "xkå"} } I rSub { size 8{å} }  rSup { size 8{"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6536098">với: I”Đ - dòng siêu quá độ ban đầu do động cơ hay phụ tải cung cấp.</para>
+        <para id="id6536122">kxkĐ - hệ số xung kích của động cơ hay phụ tải tổng hợp.</para>
+        <para id="id6720364">Trung bình có thể lấy giá trị như sau:</para>
+        <list id="id6720370" list-type="bulleted">
+          <item>Ngắn mạch tại thanh góp điện áp máy phát hoặc đầu cao áp của máy biến áp tăng: kxk = 1,9</item>
+          <item>Ngắn mạch ở các thiết bị cao áp xa máy phát: kxk = 1,8</item>
+          <item>Ngắn mạch phía thứ cấp của các trạm hạ áp (S&lt;1000KVA): kxk = 1,3</item>
+          <item>Đối với động cơ không đồng bộ, độ suy giảm của các thành phần dòng chu kỳ và tự do do nó cung cấp cho điểm ngắn mạch là gần như nhau, có thể lấy: - động cơ cở lớn : kxkĐ = 1,8</item>
+        </list>
+        <para id="id6524884">- động cơ cở 100200KW: kxkĐ = 1,51,6</para>
+        <para id="id6970093">- động cơ cở bé và phụ tải tổng hợp: kxkĐ = 1</para>
+      </section>
+      <section id="id-947130156612">
+        <title>Tính dòng ngắn mạch duy trì:</title>
+        <para id="id5747279">Các phần tử được thay thế bởi các tham số giống như ở chế độ làm việc bình thường của hệ thống điện.</para>
+        <para id="id5747289">a) Đối với hệ thống điện bao gồm các máy phát không có TĐK:</para>
+        <para id="id5747296">- Máy phát được thay bằng Eq và xd với Eq* = If*. Nếu chưa biết dòng kích từ If thì có thể tính Eq từ chế độ làm việc của máy phát trước khi xảy ra ngắn mạch:</para>
+        <para id="id6967207">
+          <m:math>
+            <m:semantics>
+              <m:mtable>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mtext>} } = sqrt { \( U rSub { size 8{F} } </m:mtext>
+                    <m:mi>sin</m:mi>
+                    <m:mtext>j+I rSub { size 8{F} } x rSub { size 8{d} }  \)  rSup { size 8{2} } + \( U rSub { size 8{F} } </m:mtext>
+                    <m:mi>cos</m:mi>
+                    <m:mtext>j \)  rSup { size 8{2} } } } {}</m:mtext>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="8pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+                <m:mtr>
+                  <m:msubsup>
+                    <m:mi>E</m:mi>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mi>q</m:mi>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mrow/>
+                  </m:msubsup>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+              </m:mtable>
+              <m:annotation encoding="StarMath 5.0"> size 12{E rSub { size 8{q} }  rSup { size 8{"} } = sqrt { \( U rSub { size 8{F} } "sin"j+I rSub { size 8{F} } x rSub { size 8{d} }  \)  rSup { size 8{2} } + \( U rSub { size 8{F} } "cos"j \)  rSup { size 8{2} } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6700569">- Phụ tải tập trung tại các nút được thay bằng: xPT = 1,2 và EPT = 0</para>
+        <para id="id6887542">- Lập sơ đồ thay thế và biến đổi để tìm dòng ngắn mạch:</para>
+        <para id="id6887550">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>N</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>I</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>ck</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>E</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>S</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>S</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{N} } =I rSub { size 8{ ital "ck"} } = {  {E rSub { size 8{S} } }  over  {X rSub { size 8{S} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6970289">a) Đối với hệ thống điện bao gồm các máy phát có TĐK:</para>
+        <para id="id6970296">Trường hợp mạch đơn giản chỉ có một máy phát thì tình trạng làm việc của máy phát khi ngắn mạch duy trì có thể được xác định bằng cách so sánh điện kháng ngắn mạch XN với Xth:</para>
+        <para id="id6242339">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msub>
+                          <m:mi>X</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>th</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:msub>
+                          <m:mi>x</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>d</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mrow>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>U</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>m</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>E</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>qgh</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:msub>
+                            <m:mi>U</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>m</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "th"} } =x rSub { size 8{d} }  {  {U rSub { size 8{ ital "m"} } }  over  {E rSub { size 8{ ital "qgh"} } -U rSub { size 8{ ital "m"} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6671255">hay khi Ucb = Uđm thì: 
+<m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>E</m:mi><m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>qgh</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mfrac><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:msub><m:mi>x</m:mi><m:mrow/></m:msub></m:mrow></m:mtr><m:mtr><m:msub><m:mi>X</m:mi><m:mrow/></m:msub></m:mtr><m:mtr><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "th"*} } =x rSub { size 8{d*} }  {  {1}  over  {E rSub { size 8{ ital "qgh"*} } -1} } } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id6589252">Nếu XN &gt; Xth thì máy phát làm việc ở trạng thái định mức và được thay bằng Eqgh và xd với: Eqgh* = Ifgh*</para>
+        <para id="id6296146">Nếu XN &lt; Xth thì máy phát làm việc ở trạng thái kích từ giới hạn và được thay bằng Uđm và XF = 0.</para>
+        <para id="id6140624">Trường hợp mạch phức tạp có nhiều nguồn liên kết ảnh hưởng nhau thường không thể sử dụng chỉ tiêu nêu trên để xác định tình trạng làm việc của các máy phát. Do đó phải dùng phương pháp gần đúng như sau:</para>
+        <para id="id6140638">- Tùy thuộc vào vị trí của máy phát đối với điểm ngắn mạch, giả thiết trước tình trạng làm việc của máy phát.</para>
+        <para id="id6130216">- Lập sơ đồ thay thế và tiến hành tính toán dòng ngắn mạch IN.</para>
+        <para id="id6130234">- Kiểm tra lại giả thiết bằng cách tính ngược lại để tìm dòng IF do mỗi máy phát cung cấp cho điểm ngắn mạch và so sánh với Ith của từng máy phát.</para>
+        <para id="id6765048">
+          <m:math>
+            <m:semantics>
+              <m:mtable>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:msub>
+                        <m:mi>E</m:mi>
+                        <m:mrow>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>qgh</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                                <m:mo stretchy="false">∗</m:mo>
+                                <m:mrow/>
+                              </m:mrow>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">−</m:mo>
+                          <m:mn>1</m:mn>
+                        </m:mrow>
+                      </m:msub>
+                      <m:msub>
+                        <m:mi>x</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mi>d</m:mi>
+                              <m:mo stretchy="false">∗</m:mo>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mfrac>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mfrac>
+                      <m:mn>1</m:mn>
+                      <m:msub>
+                        <m:mi>X</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>th</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mo stretchy="false">∗</m:mo>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mfrac>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mstyle fontsize="8pt">
+                      <m:mrow>
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>th</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                          <m:mo stretchy="false">∗</m:mo>
+                          <m:mrow/>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mstyle>
+                    <m:mo stretchy="false">=</m:mo>
+                    <m:mrow/>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:msub>
+                    <m:mi>I</m:mi>
+                    <m:mrow/>
+                  </m:msub>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+              </m:mtable>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "th"*} } = {  {1}  over  {X rSub { size 8{ ital "th"*} } } } = {  {E rSub { size 8{ ital "qgh"*} } -1}  over  {x rSub { size 8{d*} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <list id="id5766094" list-type="bulleted">
+          <item>Nếu IF &gt; Ith thì máy phát làm việc ở trạng thái kích từ giới hạn.</item>
+          <item>Nếu IF &lt; Ith thì máy phát làm việc ở trạng thái định mức.</item>
+        </list>
+        <para id="id6934948">Đối với những máy phát đã giả thiết làm việc ở trạng thái kích từ giới hạn cũng có thể kiểm tra theo điện áp đầu cực máy phát (UF &lt; Uđm)</para>
+        <para id="id6801556">Nếu giả thiết đúng xem như bài toán đã giải xong. Nếu giả thiết sai ở một máy phát nào đó cần phải thay đổi trạng thái của nó và tính toán lại.</para>
+        <para id="id6801567">- Những điểm cần lưu ý:</para>
+        <list id="id6920221" list-type="bulleted">
+          <item>Phụ tải làm tăng tổng dẫn so với điểm ngắn mạch, vì vậy nếu bỏ qua ảnh hưởng của phụ tải thì kết quả tính toán có thể có sai số lớn, chỉ bỏ qua ảnh hưởng của phụ tải khi xét đến ngắn mạch ở ngay đầu cực máy phát.</item>
+          <item>Phụ tải cũng có thể ảnh hưởng đến tình trạng làm việc của máy phát trong điều kiện ngắn mạch, do vậy cần phải xét đến chúng khi giả thiết.</item>
+          <item>Nếu trong hệ thống có máy phát không có TĐK thì thay thế nó bằng Eq và xd.</item>
+        </list>
+      </section>
+      <section id="id-0762908645405">
+        <title>Tính dòng ngắn mạch toàn phần:</title>
+        <para id="id5908671">Để máy cắt làm việc đảm bảo cần chọn SCđm và ICđm của nó sao cho vào thời điểm cắt t ta có: SCđm &gt; SNt và ICđm &gt; INt</para>
+        <para id="id6130326">Do đó cần xác định trị hiệu dụng của dòng ngắn mạch toàn phần vào thời điểm t: 
+<m:math><m:semantics><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>Nt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msqrt><m:mrow><m:msubsup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ckt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup><m:mo stretchy="false">+</m:mo><m:msubsup><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>tdt</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msubsup></m:mrow></m:msqrt></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow><m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "Nt"} } = sqrt {I rSub { size 8{ ital "ckt"} }  rSup { size 8{2} } +I rSub { size 8{ ital "tdt"} }  rSup { size 8{2} } } } {}</m:annotation></m:semantics></m:math></para>
+        <para id="id4278756">trong đó, Ickt tính toán bằng giải tích rất phức tạp, thường tra theo đường cong tính toán, còn Itdt được tính bằng biểu thức sau:</para>
+        <para id="id5913104">
+          <m:math>
+            <m:semantics>
+              <m:mtable>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mtext>}  size 12{ </m:mtext>
+                    <m:mi>.</m:mi>
+                    <m:mtext> e rSup {- {  {t}  over  {T rSub { size 6{a} } } } } }} {}</m:mtext>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msub>
+                        <m:mi>I</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mstyle fontstyle="italic">
+                              <m:mrow>
+                                <m:mtext>tdt</m:mtext>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msub>
+                        <m:mi>I</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>tdo</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                              <m:mo stretchy="false">+</m:mo>
+                              <m:mrow/>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msub>
+                    </m:mrow>
+                    <m:mtext>.</m:mtext>
+                    <m:mrow>
+                      <m:msup>
+                        <m:mi>e</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mo stretchy="false">−</m:mo>
+                              <m:mfrac>
+                                <m:mi>t</m:mi>
+                                <m:msub>
+                                  <m:mi>T</m:mi>
+                                  <m:mstyle fontsize="6pt">
+                                    <m:mrow>
+                                      <m:mi>a</m:mi>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:msub>
+                              </m:mfrac>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msup>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:msqrt>
+                        <m:mn>2</m:mn>
+                      </m:msqrt>
+                    </m:mrow>
+                    <m:msubsup>
+                      <m:mi>I</m:mi>
+                      <m:mi>o</m:mi>
+                      <m:mrow/>
+                    </m:msubsup>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+              </m:mtable>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "tdt"} } =I rSub { size 8{ ital "tdo"+{}} }  "." e rSup { size 8{- {  {t}  over  {T rSub { size 6{a} } } } } } = sqrt {2} I rSub {o}  rSup {"}  size 12{ "." e rSup {- {  {t}  over  {T rSub { size 6{a} } } } } }} {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6671190">Thực tế để đơn giản dùng công thức gần đúng sau:</para>
+        <para id="id5871609">INt = t.I”o</para>
+        <para id="id5704785">t : hệ số tính toán, giá trị trung bình của nó có thể lấy như sau:</para>
+        <para id="id5704804"> khi t = 0,05sec: t = 1,1</para>
+        <para id="id6141746"> khi t = 0,1 sec: t = 1</para>
+        <para id="id6141774"> khi t  0,2 sec: có thể xem INt  Ickt vì hầu như thành phần tự do đã tắt hết.</para>
+      </section>
+    </section>
+    <section id="id-203096728078">
+      <title>Phương pháp đường cong tính toán:</title>
+      <section id="id-866573902778">
+        <title>Đường cong tính toán:</title>
+        <para id="id5933262">Đường cong tính toán là đường cong biểu diễn trị số tương đối của thành phần chu kỳ trong dòng ngắn mạch tại những thời điểm tùy ý của quá trình quá độ phụ thuộc vào một điện kháng - điện kháng tính toán x*tt = x”d + xN.</para>
+        <para id="id6554898">I*ckt = f(x*tt , t)</para>
+        <para id="id5934104">
+        ***SORRY, THIS MEDIA TYPE IS NOT SUPPORTED.***
+      </para>
+        <para id="id5934131">Hình 6.5</para>
+        <para id="id5934135">Đường cong được xây dựng theo sơ đồ đơn giản như hình 6.5, trong đó coi rằng trước ngắn mạch máy phát làm việc với phụ tải định mức và phụ tải đó không đổi trong suốt quá trình ngắn mạch, nhánh bị ngắn mạch 3 pha tại điểm N có điện kháng xN không mang tải trước khi xảy ra ngắn mạch.</para>
+        <para id="id5916500">Cho xN các giá trị khác nhau, theo các biểu thức đã biết hoặc bằng mô hình tính Ick tại điểm ngắn mạch ở các thời điểm khác nhau. Từ kết quả tính được, xây dựng họ đường cong I*ckt = f(x*tt , t). Các tham số đều tính trong đơn vị tương đối với lượng cơ bản là định mức của máy phát: Ucb = Utb và Scb = SđmF.</para>
+        <para id="id6609688">đường cong tính toán</para>
+        <para id="id6609692">Hình 6.6</para>
+        <para id="id6609697">Thực tế có 2 loại đường cong tính toán khác nhau cho 2 loại máy phát: turbine hơi và turbine nước (hình 6.6).</para>
+        <para id="id6863794">Các đặc điểm của đường cong tính toán như sau:</para>
+        <para id="id6863801"> Khi xtt càng lớn (ngắn mạch càng xa) thì sự biến thiên của biên độ dòng điện chu kỳ theo thời gian càng ít. Khi xtt &gt; 3 có thể xem Ickt = I”o.</para>
+        <para id="id5860694"> Khi xtt càng tăng lên thì sự khác biệt về dòng giữa 2 loại máy phát càng nhỏ và khi xtt &gt; 1 thì đường cong tính toán của 2 loại máy phát hầu như trùng nhau.</para>
+        <para id="id5705656"> Đường cong tính toán tương ứng với các thời điểm khác nhau có thể cắt nhau. Điều này là do tác dụng của thiết bị TĐK làm tăng dòng ngắn mạch sau khi qua một trị số cực tiểu nào đó. Các đường cong tính toán bị giới hạn bởi đường cong I*ck = 1/x*N do phải thỏa mãn điều kiện Ickt  Uđm/xN.</para>
+        <para id="id6803356"> Nếu hằng số thời gian Tfo của máy phát khác với Tfotc của máy phát tiêu chuẩn thì cần hiệu chỉnh thời gian t ở đường cong tính toán thành:</para>
+        <para id="id5930196">
+          <m:math>
+            <m:semantics>
+              <m:mrow>
+                <m:mstyle fontsize="12pt">
+                  <m:mrow>
+                    <m:mrow>
+                      <m:mrow>
+                        <m:msup>
+                          <m:mi>t</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mi>'</m:mi>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msup>
+                        <m:mo stretchy="false">=</m:mo>
+                        <m:mi>t</m:mi>
+                      </m:mrow>
+                      <m:mtext>.</m:mtext>
+                      <m:mfrac>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>fotc</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                        <m:msub>
+                          <m:mi>T</m:mi>
+                          <m:mstyle fontsize="8pt">
+                            <m:mrow>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>fo</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:msub>
+                      </m:mfrac>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mstyle>
+                <m:mrow/>
+              </m:mrow>
+              <m:annotation encoding="StarMath 5.0"> size 12{t rSup { size 8{'} } =t "."  {  {T rSub { size 8{ ital "fotc"} } }  over  {T rSub { size 8{ ital "fo"} } } } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+        <para id="id6535939">Đối với máy phát turbine hơi: Tfotc= 7sec, máy phát turbine nước: Tfotc= 5sec.</para>
+        <para id="id5901434"> Đường cong tính toán được vẽ với máy phát có phụ tải định mức, do đó trường hợp máy phát không có phụ tải ở đầu cực thì trị số dòng điện tìm được I*ck phải hiệu chỉnh thành:</para>
+        <para id="id5901463">
+          <m:math>
+            <m:semantics>
+              <m:mtable>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mtext>} } }  over  {1,2} }  \) I rSub { size 8{* ital </m:mtext>
+                    <m:mi fontstyle="italic">ck</m:mi>
+                    <m:mtext>} } } {}</m:mtext>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="8pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:msub>
+                      <m:mi>x</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mstyle fontstyle="italic">
+                            <m:mrow>
+                              <m:mtext>tt</m:mtext>
+                            </m:mrow>
+                          </m:mstyle>
+                        </m:mrow>
+                      </m:mstyle>
+                    </m:msub>
+                    <m:mo stretchy="false">−</m:mo>
+                    <m:msubsup>
+                      <m:mi>x</m:mi>
+                      <m:mstyle fontsize="8pt">
+                        <m:mrow>
+                          <m:mi>d</m:mi>
+                        </m:mrow>
+                      </m:mstyle>
+                      <m:mrow/>
+                    </m:msubsup>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow/>
+                </m:mtr>
+                <m:mtr>
+                  <m:mrow>
+                    <m:mrow>
+                      <m:msubsup>
+                        <m:mi>I</m:mi>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mrow>
+                              <m:mrow/>
+                              <m:mstyle fontstyle="italic">
+                                <m:mrow>
+                                  <m:mtext>ck</m:mtext>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:mrow>
+                          </m:mrow>
+                        </m:mstyle>
+                        <m:mstyle fontsize="8pt">
+                          <m:mrow>
+                            <m:mi>'</m:mi>
+                          </m:mrow>
+                        </m:mstyle>
+                      </m:msubsup>
+                      <m:mo stretchy="false">=</m:mo>
+                      <m:mo stretchy="false">(</m:mo>
+                    </m:mrow>
+                    <m:mrow>
+                      <m:mn>1</m:mn>
+                      <m:mo stretchy="false">+</m:mo>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mrow>
+                </m:mtr>
+                <m:mtr>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow/>
+                    </m:mrow>
+                  </m:mstyle>
+                </m:mtr>
+              </m:mtable>
+              <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{* ital "ck"} }  rSup { size 8{'} } = \( 1+ {  {x rSub { size 8{ ital "tt"} } -x rSub { size 8{d} }  rSup { size 8{"} } }  over  {1,2} }  \) I rSub { size 8{* ital "ck"} } } {}</m:annotation>
+            </m:semantics>
+          </m:math>
+        </para>
+      </section>
+      <section id="id-557847931692">
+        <title>Phương pháp tính toán:</title>
+        <section id="id-967676854172">
+          <title>Tính toán theo một biến đổi:</title>
+          <para id="id5863857">Tính toán theo một biến đổi còn gọi là tính toán theo biến đổi chung. Phương pháp này sử dụng khi khoảng cách giữa các máy phát đến điểm ngắn mạch gần như nhau, lúc đó sự tắt dần của thành phần chu kỳ trong dòng ngắn mạch của các máy phát là gần như nhau, cho nên có thể nhập chung tất cả các máy phát thành một máy phát đẳng trị có công suất tổng để tính toán. Trình tự tính toán như sau:</para>
+          <para id="id5863871"> Lập sơ đồ thay thế trong đơn vị tương đối theo phép qui đổi gần đúng (với các lượng cơ bản Scb, Ucb = Utb):</para>
+          <para id="id5865298">- điện kháng của máy phát lấy bằng x”d.</para>
+          <para id="id6055750">- không cần đặt bất kỳ sức điện động nào trong sơ đồ.</para>
+          <para id="id6055757">- phụ tải có thể bỏ đi, trừ trường hợp những động cơ cỡ lớn nối trực tiếp vào điểm ngắn mạch thì tính toán như máy phát có cùng công suất.</para>
+          <para id="id6055768"> Biến đổi sơ đồ thay thế, đưa nó về dạng đơn giản nhất để tính điện kháng đẳng trị x* của sơ đồ đối với điểm ngắn mạch.</para>
+          <para id="id6257029"> Tính đổi về điện kháng tính toán:</para>
+          <para id="id6257043">
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow/>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>tt</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow/>
+                                  <m:mi>S</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mtext>.</m:mtext>
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>S</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>m</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                  <m:mi>S</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>S</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>cb</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{* ital "tt"} } =x rSub { size 8{*S} }  "."  {  {S rSub { size 8{ ital "m"S} } }  over  {S rSub { size 8{ ital "cb"} } } } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id5912155">trong đó: Sđm - tổng công suất định mức của các máy phát.</para>
+          <para id="id5868600"> Từ điện kháng tính toán x*tt và thời điểm t cần xét, tra đường cong tính toán (hình 6.6) sẽ tìm được I*ckt. Tính đổi về đơn vị có tên (nếu cần) với lượng cơ bản lúc này là Sđm và Utb:</para>
+          <para id="id6651951">
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>ckt</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow/>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>ckt</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mtext>.</m:mtext>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>m</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                  <m:mi>S</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow/>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>ckt</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mtext>.</m:mtext>
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>S</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>m</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                  <m:mi>S</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mrow>
+                            <m:msqrt>
+                              <m:mn>3</m:mn>
+                            </m:msqrt>
+                            <m:mtext>.</m:mtext>
+                            <m:msub>
+                              <m:mi>U</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>tb</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mrow>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "ckt"} } =I rSub { size 8{* ital "ckt"} }  "." I rSub { size 8{ ital "m"S} } =I rSub { size 8{* ital "ckt"} }  "."  {  {S rSub { size 8{ ital "m"S} } }  over  { sqrt {3}  "." U rSub { size 8{ ital "tb"} } } } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id5865013">Một số điểm cần lưu ý:</para>
+          <para id="id5865018">- Khi x*tt &gt; 3 thì dòng chu kỳ không thay đổi và bằng: I*ck = 1/x*tt.</para>
+          <para id="id6735027">- Nếu các máy phát khác loại thì dùng đường cong tính toán của máy phát có công suất lớn, gần điểm ngắn mạch.</para>
+          <para id="id6735036">- Nếu r &lt; x/3 thì không thể bỏ qua điện trở tác dụng và phải tính toán Z, sau đó dùng Ztt thay vì xtt.</para>
+        </section>
+        <section id="id-408466603884">
+          <title>Tính toán theo nhiều biến đổi:</title>
+          <para id="id6669037">Tính toán theo nhiều biến đổi còn gọi là tính toán theo những biến đổi riêng biệt. Phương pháp này sử dụng khi trong sơ đồ khoảng cách từ các máy phát đến điểm ngắn mạch khác nhau nhiều, nhất là khi có nguồn công suất vô cùng lớn, lúc đó phải kể đến sự thay đổi dòng điện riêng rẽ của từng máy phát hay từng nhóm máy phát. Trình tự tính toán như sau:</para>
+          <para id="id6669052"> Lập sơ đồ thay thế, tham số của các phần tử được tính toán gần đúng trong hệ đơn vị tương đối (với các lượng cơ bản Scb, Ucb = Utb).</para>
+          <para id="id5871089"> Dựa vào sơ đồ xác định nhóm các máy phát có thể nhập chung, hệ thống công suất vô cùng lớn phải tách riêng ra.</para>
+          <para id="id5871106"> Dùng các phép biến đổi đưa sơ đồ về dạng từng nhánh độc lập nối với điểm ngắn mạch.</para>
+          <para id="id6735065"> Tính toán với từng nhánh riêng rẽ theo phương pháp biến đổi chung. Công suất cơ bản để tính x*tt là tổng công suất các máy phát trên mỗi nhánh.</para>
+          <para id="id5954992">
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow/>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>tti</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:msub>
+                            <m:mi>x</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow/>
+                                  <m:mi fontstyle="italic">Si</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mrow>
+                        <m:mtext>.</m:mtext>
+                        <m:mfrac>
+                          <m:msub>
+                            <m:mi>S</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>m</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                  <m:mi fontstyle="italic">Si</m:mi>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:msub>
+                            <m:mi>S</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>cb</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                        </m:mfrac>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{x rSub { size 8{* ital "tti"} } =x rSub { size 8{*Si} }  "."  {  {S rSub { size 8{ ital "m"Si} } }  over  {S rSub { size 8{ ital "cb"} } } } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id5917542"> Tra theo đường cong tính toán tại thời điểm đang xét tìm ra dòng I*ckti trên mỗi nhánh riêng biệt.</para>
+          <para id="id5871174"> Tính dòng tổng trong hệ đơn vị có tên:</para>
+          <para id="id5871188">Ickt = I*ckti.Iđmi</para>
+          <para id="id6566017">Nhánh có hệ thống công suất vô cùng tách riêng ra và tính trực tiếp dòng ngắn mạch do nó cung cấp:</para>
+          <para id="id6607698">
+            <m:math>
+              <m:semantics>
+                <m:mrow>
+                  <m:mstyle fontsize="12pt">
+                    <m:mrow>
+                      <m:mrow>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mstyle fontstyle="italic">
+                                  <m:mrow>
+                                    <m:mtext>NH</m:mtext>
+                                  </m:mrow>
+                                </m:mstyle>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:msub>
+                              <m:mi>I</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>cb</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                            <m:msub>
+                              <m:mi>x</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mrow/>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>NH</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                    <m:mo stretchy="false">(</m:mo>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>cb</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                    <m:mo stretchy="false">)</m:mo>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mfrac>
+                        </m:mrow>
+                        <m:mtext>      hay    </m:mtext>
+                        <m:mrow>
+                          <m:msub>
+                            <m:mi>I</m:mi>
+                            <m:mstyle fontsize="8pt">
+                              <m:mrow>
+                                <m:mrow>
+                                  <m:mrow/>
+                                  <m:mstyle fontstyle="italic">
+                                    <m:mrow>
+                                      <m:mtext>NH</m:mtext>
+                                    </m:mrow>
+                                  </m:mstyle>
+                                </m:mrow>
+                              </m:mrow>
+                            </m:mstyle>
+                          </m:msub>
+                          <m:mo stretchy="false">=</m:mo>
+                          <m:mfrac>
+                            <m:mn>1</m:mn>
+                            <m:msub>
+                              <m:mi>x</m:mi>
+                              <m:mstyle fontsize="8pt">
+                                <m:mrow>
+                                  <m:mrow>
+                                    <m:mrow/>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>NH</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                    <m:mo stretchy="false">(</m:mo>
+                                    <m:mstyle fontstyle="italic">
+                                      <m:mrow>
+                                        <m:mtext>cb</m:mtext>
+                                      </m:mrow>
+                                    </m:mstyle>
+                                    <m:mo stretchy="false">)</m:mo>
+                                  </m:mrow>
+                                </m:mrow>
+                              </m:mstyle>
+                            </m:msub>
+                          </m:mfrac>
+                        </m:mrow>
+                      </m:mrow>
+                    </m:mrow>
+                  </m:mstyle>
+                  <m:mrow/>
+                </m:mrow>
+                <m:annotation encoding="StarMath 5.0"> size 12{I rSub { size 8{ ital "NH"} } = {  {I rSub { size 8{ ital "cb"} } }  over  {x rSub { size 8{* ital "NH" \(  ital "cb" \) } } } } "      hay    "I rSub { size 8{* ital "NH"} } = {  {1}  over  {x rSub { size 8{* ital "NH" \(  ital "cb" \) } } } } } {}</m:annotation>
+              </m:semantics>
+            </m:math>
+          </para>
+          <para id="id6899878">trong đó: x*NH(cb) - điện kháng tương hổ giữa hệ thống và điểm ngắn mạch tính trong hệ đơn vị tương đối với các lượng cơ bản Scb, Ucb = Utb.</para>
+          <para id="id5938501">Thông thường trong tính toán sử dụng 2 đến 3 nhánh biến đổi độc lập.</para>
+        </section>
+      </section>
+    </section>
+  </content>
+</document>
