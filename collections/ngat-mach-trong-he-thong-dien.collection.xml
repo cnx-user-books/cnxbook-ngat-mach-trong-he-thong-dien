@@ -1,3 +1,19 @@
-<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en">  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">  <md:content-id>col10895</md:content-id>  <md:title>Ngắt mạch trong hệ thống điện</md:title>      <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>  <md:language>en</md:language>              <md:uuid>67502fef-65cd-439e-b216-378a59b5fd7d</md:uuid>
-<md:slug>ngat-mach-trong-he-thong-dien</md:slug>
-</metadata>  <col:content>          <col:module document="m29838"/>                            <col:module document="m30323"/>                            <col:module document="m30691"/>                            <col:module document="m30557"/>                            <col:module document="m30612"/>                            <col:module document="m30337"/>                    </col:content></col:collection>
+<?xml version="1.0"?>
+<col:collection xmlns="http://cnx.rice.edu/collxml" xmlns:col="http://cnx.rice.edu/collxml" xml:lang="en" authors="Ths. &#x110;o&#xE0;n Ng&#x1ECD;c Minh T&#xFA;">
+  <metadata xmlns:md="http://cnx.rice.edu/mdml" mdml-version="0.5">
+    <md:content-id>col10895</md:content-id>
+    <md:title>Ng&#x1EAF;t m&#x1EA1;ch trong h&#x1EC7; th&#x1ED1;ng &#x111;i&#x1EC7;n</md:title>
+    <md:license url="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution License 3.0</md:license>
+    <md:language>en</md:language>
+    <md:uuid>67502fef-65cd-439e-b216-378a59b5fd7d</md:uuid>
+    <md:slug>ngat-mach-trong-he-thong-dien</md:slug>
+  </metadata>
+  <col:content>
+    <col:module document="m29838"/>
+    <col:module document="m30323"/>
+    <col:module document="m30691"/>
+    <col:module document="m30557"/>
+    <col:module document="m30612"/>
+    <col:module document="m30337"/>
+  </col:content>
+</col:collection>
