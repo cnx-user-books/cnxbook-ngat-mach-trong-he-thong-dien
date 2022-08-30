@@ -46,7 +46,7 @@
               <m:mrow>
                 <m:mtable>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mstyle fontsize="12pt">
                         <m:mrow>
                           <m:mrow>
@@ -124,10 +124,10 @@
                         </m:mrow>
                       </m:mstyle>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mrow>
                         <m:msub>
                           <m:mi>S</m:mi>
@@ -199,10 +199,10 @@
                         </m:mfrac>
                       </m:mrow>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mrow>
                         <m:msub>
                           <m:mi>Z</m:mi>
@@ -306,7 +306,7 @@
                         </m:msubsup>
                       </m:mfrac>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                 </m:mtable>
                 <m:mrow/>
@@ -461,7 +461,7 @@ Z rSub { size 8{* \(  ital "cb" \) } }  =  {  {Z}  over  {Z rSub { size 8{ ital 
               <m:mrow>
                 <m:mtable>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mstyle fontsize="12pt">
                         <m:mrow>
                           <m:mrow>
@@ -543,10 +543,10 @@ Z rSub { size 8{* \(  ital "cb" \) } }  =  {  {Z}  over  {Z rSub { size 8{ ital 
                         </m:mrow>
                       </m:mstyle>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:msub>
                         <m:mi>X</m:mi>
                         <m:mstyle fontsize="8pt">
@@ -607,7 +607,7 @@ Z rSub { size 8{* \(  ital "cb" \) } }  =  {  {Z}  over  {Z rSub { size 8{ ital 
                       </m:msub>
                       <m:mtext/>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                 </m:mtable>
                 <m:mrow/>
@@ -633,7 +633,7 @@ X rSub { size 8{B} } "%  =   X" rSub { size 8{B} }  "."  {  { sqrt {3}  "." I rS
               <m:mrow>
                 <m:mtable>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mstyle fontsize="12pt">
                         <m:mrow>
                           <m:mrow>
@@ -713,10 +713,10 @@ X rSub { size 8{B} } "%  =   X" rSub { size 8{B} }  "."  {  { sqrt {3}  "." I rS
                         </m:mrow>
                       </m:mstyle>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mrow>
                         <m:msub>
                           <m:mi>Z</m:mi>
@@ -918,7 +918,7 @@ X rSub { size 8{B} } "%  =   X" rSub { size 8{B} }  "."  {  { sqrt {3}  "." I rS
                         </m:msubsup>
                       </m:mfrac>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                 </m:mtable>
                 <m:mrow/>
@@ -939,7 +939,7 @@ Z rSub { size 8{* \(  ital "cb"2 \) } }  = Z rSub { size 8{* \(  ital "cb"1 \) }
               <m:mrow>
                 <m:mtable>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mstyle fontsize="12pt">
                         <m:mrow>
                           <m:mrow>
@@ -1011,10 +1011,10 @@ Z rSub { size 8{* \(  ital "cb"2 \) } }  = Z rSub { size 8{* \(  ital "cb"1 \) }
                         </m:mrow>
                       </m:mstyle>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mrow>
                         <m:msub>
                           <m:mi>Z</m:mi>
@@ -1189,7 +1189,7 @@ Z rSub { size 8{* \(  ital "cb"2 \) } }  = Z rSub { size 8{* \(  ital "cb"1 \) }
                         </m:msubsup>
                       </m:mfrac>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                 </m:mtable>
                 <m:mrow/>
@@ -1210,7 +1210,7 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
               <m:mrow>
                 <m:mtable>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mstyle fontsize="12pt">
                         <m:mrow>
                           <m:mrow>
@@ -1253,10 +1253,10 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
                         </m:mrow>
                       </m:mstyle>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mrow>
                         <m:msub>
                           <m:mi>Z</m:mi>
@@ -1367,7 +1367,7 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
                         </m:msub>
                       </m:mfrac>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                 </m:mtable>
                 <m:mrow/>
@@ -1395,7 +1395,7 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
               <m:mrow>
                 <m:mtable>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:mstyle fontsize="12pt">
                         <m:mrow>
                           <m:mrow>
@@ -1474,10 +1474,10 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
                         </m:mrow>
                       </m:mstyle>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:msub>
                         <m:mi>X</m:mi>
                         <m:mstyle fontsize="8pt">
@@ -1549,10 +1549,10 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
                         </m:mstyle>
                       </m:msub>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:msub>
                         <m:mi>y</m:mi>
                         <m:mstyle fontsize="8pt">
@@ -1642,10 +1642,10 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
                         </m:mstyle>
                       </m:msub>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                   <m:mtr>
-                    <m:mrow>
+                    <m:mtd>
                       <m:msub>
                         <m:mi>E</m:mi>
                         <m:mstyle fontsize="8pt">
@@ -1718,7 +1718,7 @@ Z rSub { size 8{* \(  ital "cb" \) } }  = Z rSub { size 8{* \(  ital "m" \) } 
                         </m:mstyle>
                       </m:msub>
                       <m:mrow/>
-                    </m:mrow>
+                    </m:mtd>
                   </m:mtr>
                 </m:mtable>
                 <m:mrow/>
@@ -1752,7 +1752,7 @@ E rSub { size 8{* \(  ital "cb" \) } } "  "="  "w rSub { size 8{* \( "b" \) } 
                 <m:mrow>
                   <m:mtable>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:mstyle fontsize="12pt">
                           <m:mrow>
                             <m:mrow>
@@ -1829,10 +1829,10 @@ E rSub { size 8{* \(  ital "cb" \) } } "  "="  "w rSub { size 8{* \( "b" \) } 
                           </m:mrow>
                         </m:mstyle>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:mrow>
                           <m:msub>
                             <m:mi>U</m:mi>
@@ -1902,10 +1902,10 @@ E rSub { size 8{* \(  ital "cb" \) } } "  "="  "w rSub { size 8{* \( "b" \) } 
                           </m:mstyle>
                         </m:msub>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:msub>
                           <m:mi>I</m:mi>
                           <m:mstyle fontsize="8pt">
@@ -1979,10 +1979,10 @@ E rSub { size 8{* \(  ital "cb" \) } } "  "="  "w rSub { size 8{* \( "b" \) } 
                           </m:mstyle>
                         </m:msub>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:msub>
                           <m:mi>Z</m:mi>
                           <m:mstyle fontsize="8pt">
@@ -2060,7 +2060,7 @@ E rSub { size 8{* \(  ital "cb" \) } } "  "="  "w rSub { size 8{* \( "b" \) } 
                           </m:mstyle>
                         </m:msub>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                   </m:mtable>
                   <m:mrow/>
@@ -2624,7 +2624,7 @@ Z rSub { size 8{n  ital "q"} } "  "=  \( k rSub { size 8{1} }  "." k rSub { si
           </m:math>
         </para>
         <para id="id5864175">Tương tự: 
-<m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>n</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>q</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mtext/></m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbn</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbcs</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac><m:mtext>.</m:mtext><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>n</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>q</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:msup><m:mfenced open="" close=""><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbcs</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbn</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mtext>.</m:mtext><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mrow></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
+<m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mtd><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>n</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>q</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:mtext/></m:mrow><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbn</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbcs</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac><m:mtext>.</m:mtext><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>n</m:mi><m:mstyle fontstyle="italic"><m:mrow><m:mtext>q</m:mtext></m:mrow></m:mstyle></m:mrow></m:mrow></m:mstyle></m:msub><m:mrow><m:mtext/><m:mo stretchy="false">=</m:mo><m:msup><m:mfenced open="" close=""><m:mfrac><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbcs</m:mtext></m:mrow></m:mstyle></m:msub><m:msub><m:mi>U</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mtext>tbn</m:mtext></m:mrow></m:mstyle></m:msub></m:mfrac></m:mfenced><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow><m:mtext>.</m:mtext><m:msub><m:mi>Z</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mi>n</m:mi></m:mrow></m:mstyle></m:msub><m:mrow/></m:mtd></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
  size 12{I rSub { size 8{n  ital "q"} } "   "="  " {  {U rSub { size 8{"tbn"} } }  over  {U rSub { size 8{"tbcs"} } } }  "." I rSub { size 8{n} } }  {} # 
 Z rSub { size 8{n  ital "q"} } "  "=  left ( {  {U rSub { size 8{"tbcs"} } }  over  {U rSub { size 8{"tbn"} } } }  right ) rSup { size 8{2} }  "." Z rSub { size 8{n} }  {} 
 } } {}</m:annotation></m:semantics></m:math></para>
@@ -2644,7 +2644,7 @@ Z rSub { size 8{n  ital "q"} } "  "=  left ( {  {U rSub { size 8{"tbcs"} } }  
                 <m:mrow>
                   <m:mtable>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:mstyle fontsize="12pt">
                           <m:mrow>
                             <m:mrow>
@@ -2725,10 +2725,10 @@ Z rSub { size 8{n  ital "q"} } "  "=  left ( {  {U rSub { size 8{"tbcs"} } }  
                           </m:mrow>
                         </m:mstyle>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:msub>
                           <m:mi>I</m:mi>
                           <m:mstyle fontsize="8pt">
@@ -2829,10 +2829,10 @@ Z rSub { size 8{n  ital "q"} } "  "=  left ( {  {U rSub { size 8{"tbcs"} } }  
                           </m:mrow>
                         </m:mfrac>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:mo stretchy="false">(</m:mo>
                         <m:msub>
                           <m:mi>S</m:mi>
@@ -2878,7 +2878,7 @@ Z rSub { size 8{n  ital "q"} } "  "=  left ( {  {U rSub { size 8{"tbcs"} } }  
                         </m:msub>
                         <m:mo stretchy="false">)</m:mo>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                   </m:mtable>
                   <m:mrow/>
@@ -3264,7 +3264,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                     <m:semantics>
                       <m:mtable>
                         <m:mtr>
-                          <m:mrow>
+                          <m:mtd>
                             <m:mtext>} }  </m:mtext>
                             <m:mi>.</m:mi>
                             <m:mtext>  {  {U rSub { size 8{ ital </m:mtext>
@@ -3274,7 +3274,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                             <m:mi></m:mi>
                             <m:mi>m</m:mi>
                             <m:mtext>} } } } } {}</m:mtext>
-                          </m:mrow>
+                          </m:mtd>
                         </m:mtr>
                         <m:mtr>
                           <m:mstyle fontsize="8pt">
@@ -3311,7 +3311,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                     <m:semantics>
                       <m:mtable>
                         <m:mtr>
-                          <m:mrow>
+                          <m:mtd>
                             <m:mtext>} }  </m:mtext>
                             <m:mi>.</m:mi>
                             <m:mtext>  {  {S rSub { size 8{ ital </m:mtext>
@@ -3327,7 +3327,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                             <m:mtext>} }  rSup { size 8{2} } }  over  {U rSub { size 8{ ital </m:mtext>
                             <m:mi fontstyle="italic">cb</m:mi>
                             <m:mtext>} }  rSup { size 8{2} } } } } {}</m:mtext>
-                          </m:mrow>
+                          </m:mtd>
                         </m:mtr>
                         <m:mtr>
                           <m:mstyle fontsize="8pt">
@@ -3364,7 +3364,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                     <m:semantics>
                       <m:mtable>
                         <m:mtr>
-                          <m:mrow>
+                          <m:mtd>
                             <m:mtext>} }  </m:mtext>
                             <m:mi>.</m:mi>
                             <m:mtext>  {  {S rSub { size 8{ ital </m:mtext>
@@ -3373,7 +3373,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                             <m:mi></m:mi>
                             <m:mi>m</m:mi>
                             <m:mtext>} } } } } {}</m:mtext>
-                          </m:mrow>
+                          </m:mtd>
                         </m:mtr>
                         <m:mtr>
                           <m:mstyle fontsize="8pt">
@@ -4271,7 +4271,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                 <m:mrow>
                   <m:mtable>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:mstyle fontsize="12pt">
                           <m:mrow>
                             <m:mrow>
@@ -4337,10 +4337,10 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                           </m:mrow>
                         </m:mstyle>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:msub>
                           <m:mi>X</m:mi>
                           <m:mstyle fontsize="8pt">
@@ -4400,10 +4400,10 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                           </m:msub>
                         </m:mfrac>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:msub>
                           <m:mi>X</m:mi>
                           <m:mstyle fontsize="8pt">
@@ -4463,7 +4463,7 @@ I rSub { size 8{ ital "cbn"} } "   "=  \( k rSub { size 8{1} }  "." k rSub { siz
                           </m:msub>
                         </m:mfrac>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                   </m:mtable>
                   <m:mrow/>

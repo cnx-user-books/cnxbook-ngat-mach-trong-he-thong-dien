@@ -101,11 +101,11 @@
             <m:semantics>
               <m:mtable>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mtext>} } =X rSub { size 8{*N} } = {  {1}  over  {I rSub { size 8{* ital </m:mtext>
                     <m:mi fontstyle="italic">mm</m:mi>
                     <m:mtext>} } } } } {}</m:mtext>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
                   <m:mstyle fontsize="8pt">
@@ -225,7 +225,7 @@
                   </m:mstyle>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mrow>
                       <m:msub>
                         <m:mi>I</m:mi>
@@ -278,7 +278,7 @@
                       </m:mstyle>
                       <m:mrow/>
                     </m:msubsup>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
                   <m:mstyle fontsize="12pt">
@@ -460,7 +460,7 @@
                 <m:mrow>
                   <m:mtable>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:mstyle fontsize="12pt">
                           <m:mrow>
                             <m:mrow>
@@ -548,10 +548,10 @@
                           </m:mrow>
                         </m:mstyle>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                     <m:mtr>
-                      <m:mrow>
+                      <m:mtd>
                         <m:mrow>
                           <m:msub>
                             <m:mi>X</m:mi>
@@ -635,7 +635,7 @@
                           </m:mfrac>
                         </m:mrow>
                         <m:mrow/>
-                      </m:mrow>
+                      </m:mtd>
                     </m:mtr>
                   </m:mtable>
                   <m:mrow/>
@@ -659,7 +659,7 @@ X rSub { size 8{NS} } = {  { \( X rSub { size 8{H1} } +X rSub { size 8{ ital "MN
         <para id="id6970035">a) Đối với mạng có công suất vô cùng lớn:</para>
         <para id="id6970041">I”o = Ick = I</para>
         <para id="id5860855">lúc đó: 
-<m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ckm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ck</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ck</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:msqrt><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">+</m:mo><m:mn>2</m:mn></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:msqrt><m:mrow/></m:mrow></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
+<m:math><m:semantics><m:mrow><m:mrow><m:mtable><m:mtr><m:mtd><m:mstyle fontsize="12pt"><m:mrow><m:mrow><m:mrow><m:msub><m:mi>i</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ckm</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msqrt><m:mn>2</m:mn></m:msqrt></m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ck</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow></m:mrow></m:mstyle><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mrow><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">=</m:mo><m:msub><m:mi>I</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>ck</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub></m:mrow><m:msqrt><m:mrow><m:mrow><m:mn>1</m:mn><m:mo stretchy="false">+</m:mo><m:mn>2</m:mn></m:mrow><m:mo stretchy="false">(</m:mo><m:mrow><m:msub><m:mi>k</m:mi><m:mstyle fontsize="8pt"><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>xk</m:mtext></m:mrow></m:mstyle></m:mrow></m:mstyle></m:msub><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow><m:msup><m:mo stretchy="false">)</m:mo><m:mstyle fontsize="8pt"><m:mrow><m:mn>2</m:mn></m:mrow></m:mstyle></m:msup></m:mrow></m:msqrt><m:mrow/></m:mtd></m:mtr></m:mtable><m:mrow/></m:mrow></m:mrow><m:annotation encoding="StarMath 5.0">alignl { stack {
  size 12{i rSub { size 8{ ital "xk"} } =k rSub { size 8{ ital "xk"} } I rSub { size 8{ ital "ckm"} } = sqrt {2} k rSub { size 8{ ital "xk"} } I rSub { size 8{ ital "ck"} } }  {} # 
 I rSub { size 8{ ital "xk"} } =I rSub { size 8{ ital "ck"} }  sqrt {1+2 \( k rSub { size 8{ ital "xk"} } -1 \)  rSup { size 8{2} } }  {} 
 } } {}</m:annotation></m:semantics></m:math></para>
@@ -669,7 +669,7 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{ ital "ck"} }  sqrt {1+2 \( k rSu
             <m:semantics>
               <m:mtable>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mtable>
                       <m:mtr>
                         <m:mstyle fontsize="12pt">
@@ -764,12 +764,12 @@ I rSub { size 8{ ital </m:mtext>
                       </m:mtr>
                     </m:mtable>
                     <m:mrow/>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mrow/>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
               </m:mtable>
               <m:annotation encoding="StarMath 5.0">alignl { stack {
@@ -865,13 +865,13 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
             <m:semantics>
               <m:mtable>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mtext>} } = sqrt { \( U rSub { size 8{F} } </m:mtext>
                     <m:mi>sin</m:mi>
                     <m:mtext>j+I rSub { size 8{F} } x rSub { size 8{d} }  \)  rSup { size 8{2} } + \( U rSub { size 8{F} } </m:mtext>
                     <m:mi>cos</m:mi>
                     <m:mtext>j \)  rSup { size 8{2} } } } {}</m:mtext>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
                   <m:mstyle fontsize="8pt">
@@ -1046,7 +1046,7 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
           </m:math>
         </para>
         <para id="id6671255">hay khi Ucb = Uđm thì: 
-<m:math><m:semantics><m:mtable><m:mtr><m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>E</m:mi><m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>qgh</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mfrac><m:mrow/></m:mrow></m:mtr><m:mtr><m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:msub><m:mi>x</m:mi><m:mrow/></m:msub></m:mrow></m:mtr><m:mtr><m:msub><m:mi>X</m:mi><m:mrow/></m:msub></m:mtr><m:mtr><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "th"*} } =x rSub { size 8{d*} }  {  {1}  over  {E rSub { size 8{ ital "qgh"*} } -1} } } {}</m:annotation></m:semantics></m:math></para>
+<m:math><m:semantics><m:mtable><m:mtr><m:mtd><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mi>d</m:mi><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mfrac><m:mn>1</m:mn><m:msub><m:mi>E</m:mi><m:mrow><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>qgh</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mo stretchy="false">−</m:mo><m:mn>1</m:mn></m:mrow></m:msub></m:mfrac><m:mrow/></m:mtd></m:mtr><m:mtr><m:mtd><m:mstyle fontsize="8pt"><m:mrow><m:mrow><m:mstyle fontstyle="italic"><m:mrow><m:mtext>th</m:mtext></m:mrow></m:mstyle><m:mo stretchy="false">∗</m:mo><m:mrow/></m:mrow></m:mrow></m:mstyle><m:mo stretchy="false">=</m:mo><m:msub><m:mi>x</m:mi><m:mrow/></m:msub></m:mtd></m:mtr><m:mtr><m:msub><m:mi>X</m:mi><m:mrow/></m:msub></m:mtr><m:mtr><m:mstyle fontsize="12pt"><m:mrow><m:mrow/></m:mrow></m:mstyle></m:mtr></m:mtable><m:annotation encoding="StarMath 5.0"> size 12{X rSub { size 8{ ital "th"*} } =x rSub { size 8{d*} }  {  {1}  over  {E rSub { size 8{ ital "qgh"*} } -1} } } {}</m:annotation></m:semantics></m:math></para>
         <para id="id6589252">Nếu XN &gt; Xth thì máy phát làm việc ở trạng thái định mức và được thay bằng Eqgh và xd với: Eqgh* = Ifgh*</para>
         <para id="id6296146">Nếu XN &lt; Xth thì máy phát làm việc ở trạng thái kích từ giới hạn và được thay bằng Uđm và XF = 0.</para>
         <para id="id6140624">Trường hợp mạch phức tạp có nhiều nguồn liên kết ảnh hưởng nhau thường không thể sử dụng chỉ tiêu nêu trên để xác định tình trạng làm việc của các máy phát. Do đó phải dùng phương pháp gần đúng như sau:</para>
@@ -1058,7 +1058,7 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
             <m:semantics>
               <m:mtable>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mfrac>
                       <m:msub>
                         <m:mi>E</m:mi>
@@ -1094,10 +1094,10 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
                       </m:msub>
                     </m:mfrac>
                     <m:mrow/>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mfrac>
                       <m:mn>1</m:mn>
                       <m:msub>
@@ -1119,10 +1119,10 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
                     </m:mfrac>
                     <m:mo stretchy="false">=</m:mo>
                     <m:mrow/>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mstyle fontsize="8pt">
                       <m:mrow>
                         <m:mrow>
@@ -1138,7 +1138,7 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
                     </m:mstyle>
                     <m:mo stretchy="false">=</m:mo>
                     <m:mrow/>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
                   <m:msub>
@@ -1182,14 +1182,14 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
             <m:semantics>
               <m:mtable>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mtext>}  size 12{ </m:mtext>
                     <m:mi>.</m:mi>
                     <m:mtext> e rSup {- {  {t}  over  {T rSub { size 6{a} } } } } }} {}</m:mtext>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mrow>
                       <m:msub>
                         <m:mi>I</m:mi>
@@ -1254,7 +1254,7 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
                       <m:mi>o</m:mi>
                       <m:mrow/>
                     </m:msubsup>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
                   <m:mstyle fontsize="12pt">
@@ -1358,11 +1358,11 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
             <m:semantics>
               <m:mtable>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mtext>} } }  over  {1,2} }  \) I rSub { size 8{* ital </m:mtext>
                     <m:mi fontstyle="italic">ck</m:mi>
                     <m:mtext>} } } {}</m:mtext>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
                   <m:mstyle fontsize="8pt">
@@ -1372,7 +1372,7 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
                   </m:mstyle>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:msub>
                       <m:mi>x</m:mi>
                       <m:mstyle fontsize="8pt">
@@ -1395,13 +1395,13 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
                       </m:mstyle>
                       <m:mrow/>
                     </m:msubsup>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow/>
+                  <m:mtd/>
                 </m:mtr>
                 <m:mtr>
-                  <m:mrow>
+                  <m:mtd>
                     <m:mrow>
                       <m:msubsup>
                         <m:mi>I</m:mi>
@@ -1431,7 +1431,7 @@ I rSub { size 8{ ital "xk"} } =I rSub { size 8{o} }  rSup { size 8{"} }  sqrt {1
                       <m:mo stretchy="false">+</m:mo>
                       <m:mrow/>
                     </m:mrow>
-                  </m:mrow>
+                  </m:mtd>
                 </m:mtr>
                 <m:mtr>
                   <m:mstyle fontsize="12pt">
